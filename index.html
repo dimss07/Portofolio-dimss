@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portofolio Dimas </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background canvas untuk partikel -->
+  <canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+  <header>
+    <h1 class="brand">Portofolio Dimssproject</h1>
+
+    <!-- Navigasi -->
+    <nav id="navMenu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#photos">Foto-Foto</a></li>
+        <li><a href="#thanks">Thanks</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hamburger (untuk mobile) -->
+    <button id="menuToggle" class="menu-toggle" aria-label="Buka menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Toggle theme -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Ganti tema">🌙</button>
+  </header>
+
+  <!-- HOME -->
+  <section id="home" class="slide">
+    <img
+      id="profileImg"
+      src="assets/profile.jpg"
+      alt="Foto profil Dimas"
+      onerror="this.onerror=null;this.src='https://i.pravatar.cc/300';"
+    />
+    <h2>Halo, Saya Dimas!</h2>
+    <p>
+      Seorang Pelajar yang sedang belajar untuk membuat web dengan sebuah html, Css, Dan JavaScript.
+    </p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="slide">
+    <h2>Tentang Saya</h2>
+    <p>
+      masih belajar dengan HTML, CSS, JavaScript, serta framework modern.
+      Tertarik belajar membantu brand & project tampil profesional di web.
+    </p>
+
+    <div class="contact-info">
+      <div><strong>Email:</strong> <a href="mailto:dimwhy07@gmail.com">dimwhy07@gmail.com</a></div>
+      <div><strong>Telp:</strong> <a href="tel:+6285136626163">+62 851-3662-6163</a></div>
+  
+
+
+    <div class="contact-form">
+      <h3>Hubungi Saya</h3>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Nama Lengkap" required />
+        <input type="email" name="email" placeholder="Email Anda" required />
+        <textarea name="message" rows="5" placeholder="Tulis pesan..." required></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="photos" class="slide">
+    <h2>Foto-Foto</h2>
+
+    <div class="gallery">
+      <img src="assets/works/work1.png" alt="photos 1"
+           onerror="this.onerror=null;this.src='https://picsum.photos/seed/p1/600/400';" />
+      <img src="assets/works/work2.jpg" alt="photos 2"
+           onerror="this.onerror=null;this.src='https://picsum.photos/seed/p2/600/400';" />
+      <img src="assets/works/work3.jpg" alt="photos 3"
+           onerror="this.onerror=null;this.src='https://picsum.photos/seed/p3/600/400';" />
+      <img src="assets/works/work4.jpg" alt="photos 4"
+           onerror="this.onerror=null;this.src='https://picsum.photos/seed/p4/600/400';" />
+    </div>
+  </section>
+
+  <!-- THANKS -->
+  <section id="thanks" class="slide">
+    <h2>Terima Kasih!</h2>
+    <p>Terima kasih sudah mengunjungi portofolio saya. Hubungi atau follow saya di sosial media:</p>
+
+    <div class="socials">
+      <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Dimas Tzy
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
